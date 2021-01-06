@@ -1,0 +1,18 @@
+Rules of Hooks
+---------------
+"Only Cal lHooks at the Top Level"
+Don't call Hooks inside loops, conditions or ntested functions
+
+"Only Call Hooks from React Functions"
+Call them from whithin React functional components and not just any regualr
+JavaScript function
+
+- useState never automatically merge the data. You have to do that manually. For example dealing with array,
+    you should use spread operator. Otherwise the entire data will be replaced. 
+- The useState hook lets add state to functional components.
+- In classes, the state is always and object.
+- With the useState hook, the state doesn't have to be an object.
+- The useState hook returns an array with 2 elements.
+- The frist element is the current value of the state, and the second elements is a state setter function.
+- New state value depends on the previous state value? You can pass a function to the setter function.
+- When dealing with objects or arryays, always make sure to spread your state varuable and then call the setter function.
