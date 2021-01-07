@@ -1,17 +1,17 @@
 import React,{ useContext } from "react";
 
 const themes = {
-    light: {
-      foreground: "#000000",
-      background: "#eeeeee"
-    },
     dark: {
-      foreground: "#ffffff",
-      background: "#222222"
+      foreground: "red",
+      background: "black"
+    },
+    light: {
+      foreground: "green",
+      background: "white"
     }
   };
   
-  const ThemeContext = React.createContext(themes.light);
+  const ThemeContext = React.createContext(themes.dark);
   
   function ThemedButton() {
     const theme = useContext(ThemeContext);
@@ -21,3 +21,5 @@ const themes = {
       </button>
     );
   }
+
+  export default ThemedButton
