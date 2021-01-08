@@ -51,3 +51,8 @@ useReducer in React
 - useReducer (reducer,initialState)
 - newState = reducer(currentState, action)
 - useReducer returns a pair of values. [newState, dispatch]
+
+useReducer with useContext
+--------------------------
+useReducer - Local state managementShare state betweeen components - Global state management
+useReducer + useContext
