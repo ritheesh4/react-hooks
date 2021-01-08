@@ -29,3 +29,25 @@ useEffect
 Context
 --------
 Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+useReducer
+----------
+- useReducer is a hook that is used for state management
+- It is an alternative to useState
+
+Hooks
+------
+useState - state
+useEffect - side effects
+useContext - context API
+useReducer - reducers
+
+reduce in JavaScript    
+- array.reduce(reducer, initialValue)
+- singleValue - reducer(accumulator, itemValue)
+- reduce method returns a single value
+
+useReducer in React
+- useReducer (reducer,initialState)
+- newState = reducer(currentState, action)
+- useReducer returns a pair of values. [newState, dispatch]
