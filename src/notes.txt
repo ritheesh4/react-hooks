@@ -7,6 +7,8 @@ Don't call Hooks inside loops, conditions or ntested functions
 Call them from whithin React functional components and not just any regualr
 JavaScript function
 
+useState
+----------
 - useState never automatically merge the data. You have to do that manually. For example dealing with array,
     you should use spread operator. Otherwise the entire data will be replaced. 
 - The useState hook lets add state to functional components.
@@ -16,3 +18,10 @@ JavaScript function
 - The frist element is the current value of the state, and the second elements is a state setter function.
 - New state value depends on the previous state value? You can pass a function to the setter function.
 - When dealing with objects or arryays, always make sure to spread your state varuable and then call the setter function.
+useEffect
+----------
+- The Effect Hook lets you perform side effects in functional components
+- Context is designed to share data that can be considered “global” for a tree of React components, such as the current authenticated user, theme, or preferred language. 
+- useEffect with cleanup is really important. If we have added an event listener and we remove that component, it is really important to remove the event listener from there,
+  otherwise the old event listener will keep listen and it would not work clean us we want.
+  
