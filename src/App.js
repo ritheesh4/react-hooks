@@ -17,7 +17,8 @@ import './App.css';
 // import ComponentB from './components/ComponentB'
 // import ComponentC from './components/ComponentC'
 // import DataFetchingOne from './components/DataFetchingOne'
-import DataFetchingTwo from './components/DataFetchingTwo'
+// import DataFetchingTwo from './components/DataFetchingTwo'
+import ParentComponent from './components/ParentComponent';
 
 // export const CountContext = React.createContext()
 
@@ -72,7 +73,8 @@ function App() {
   return (
     <div className='App'>
       {/* <DataFetchingOne/> */}
-      <DataFetchingTwo />
+      {/* <DataFetchingTwo /> */}
+      <ParentComponent/>
     </div>
   )
 }
