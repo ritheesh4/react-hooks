@@ -25,3 +25,7 @@ useEffect
 - useEffect with cleanup is really important. If we have added an event listener and we remove that component, it is really important to remove the event listener from there,
   otherwise the old event listener will keep listen and it would not work clean us we want.
   
+
+Context
+--------
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
