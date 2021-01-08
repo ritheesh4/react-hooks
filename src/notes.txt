@@ -25,3 +25,59 @@ useEffect
 - useEffect with cleanup is really important. If we have added an event listener and we remove that component, it is really important to remove the event listener from there,
   otherwise the old event listener will keep listen and it would not work clean us we want.
   
+
+Context
+--------
+Context provides a way to pass data through the component tree without having to pass props down manually at every level.
+
+useReducer
+----------
+- useReducer is a hook that is used for state management
+- It is an alternative to useState
+
+Hooks
+------
+useState - state
+useEffect - side effects
+useContext - context API
+useReducer - reducers
+
+reduce in JavaScript    
+- array.reduce(reducer, initialValue)
+- singleValue - reducer(accumulator, itemValue)
+- reduce method returns a single value
+
+useReducer in React
+- useReducer (reducer,initialState)
+- newState = reducer(currentState, action)
+- useReducer returns a pair of values. [newState, dispatch]
+
+useReducer with useContext
+--------------------------
+useReducer - Local state managementShare state betweeen components - Global state management
+useReducer + useContext
+
+useState vs useReducer
+
+
+Scenario                             useState                    useReducer
+-----------------------------------------------------------------------
+Type of state                        Number, String, Boolean     Object or array
+Number of state transitions          One or two                  Too many
+Related state transtitions ?         No                          Yes
+Business logic                       No business logic           Complex business logic
+Local vs global                      Local                       Global
+
+useCallbak Hook
+--------------
+what?
+useCallback is a hook that will return a memoized versoin of the callback frunction that Onlychanges if 
+one of the dependencies has changed.
+
+why?
+It is useful when passing callbacks to optimized child components that rely on reference equality to prevent
+unnecessary renders.
+
+
+
+
