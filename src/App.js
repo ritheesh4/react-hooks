@@ -1,5 +1,6 @@
 import './App.css';
-import IntervalHookCounter from './components/IntervalHookCounter';
+import DataFetching from './components/DataFetching';
+// import IntervalHookCounter from './components/IntervalHookCounter';
 // import Button from './components/HookCounter'
 // import HookCounterTwo from './components/HookCounterTwo'
 // import ThemedButton from './components/Context';
@@ -7,7 +8,7 @@ import IntervalHookCounter from './components/IntervalHookCounter';
 // import HookCounterFour from './components/HookCounterFour'
 // import ClickEffects from './components/UseEffects'
 // import HookMouse from './components/HookMouse'
-import MouseContainer from './components/MouseContainer'
+// import MouseContainer from './components/MouseContainer'
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
       {/* <HookCounterFour /> */}
       {/* <ClickEffects /> */}
       {/* <HookMouse /> */}
-      <IntervalHookCounter />
+      {/* <IntervalHookCounter /> */}
       {/* <MouseContainer /> */}
+      <DataFetching />
     </div>
   );
 }
