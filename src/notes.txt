@@ -56,3 +56,14 @@ useReducer with useContext
 --------------------------
 useReducer - Local state managementShare state betweeen components - Global state management
 useReducer + useContext
+
+useState vs useReducer
+
+
+Scenario                             useState                    useReducer
+-----------------------------------------------------------------------
+Type of state                        Number, String, Boolean     Object or array
+Number of state transitions          One or two                  Too many
+Related state transtitions ?         No                          Yes
+Business logic                       No business logic           Complex business logic
+Local vs global                      Local                       Global
