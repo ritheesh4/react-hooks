@@ -18,7 +18,9 @@ import './App.css';
 // import ComponentC from './components/ComponentC'
 // import DataFetchingOne from './components/DataFetchingOne'
 // import DataFetchingTwo from './components/DataFetchingTwo'
-import ParentComponent from './components/ParentComponent';
+// import ParentComponent from './components/ParentComponent';
+// import Counter from './components/Counter'
+import FocusInput from './components/FocusInput'
 
 // export const CountContext = React.createContext()
 
@@ -74,7 +76,9 @@ function App() {
     <div className='App'>
       {/* <DataFetchingOne/> */}
       {/* <DataFetchingTwo /> */}
-      <ParentComponent/>
+      {/* <ParentComponent/> */}
+      {/* <Counter /> */}
+      <FocusInput />
     </div>
   )
 }
