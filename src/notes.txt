@@ -78,6 +78,6 @@ why?
 It is useful when passing callbacks to optimized child components that rely on reference equality to prevent
 unnecessary renders.
 
-
+Difference between useCallback and useMemo: To cache the function use callback and to cache the result use useMemo
 
 
